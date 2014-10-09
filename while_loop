@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+ 
+    char letters[] = { 'a', 'b', 'c'};
+    int w = 0;
+    while (w < 3) {
+        printf ("letters %d is %c\n", w, letters[w]);
+        ++w;
+    }
+    return 0;
+}
