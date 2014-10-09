@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+
+    char a = 'a';
+    char b = 'b';
+    char c = 'c';
+    char letter = 'l';
+    
+    if (letter == a) printf("letter %c is %c\n", letter, a);
+    else if (letter == b) printf("letter %c is %c\n", letter, b);
+    else if (letter == c) printf("letter %c is %c\n", letter, c);
+    else printf("letter '%c' not found\n", letter);
+    
+    
+}
