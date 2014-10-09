@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int a = 12;
+    int b = 14;
+    int minimum;
+    char min_value;
+    
+    if (a > b) {
+        minimum = b;
+        min_value = 'b';
+    }
+    else {
+        minimum = a;
+        min_value = 'a';
+    
+    }
+    printf("minimum is %c, = %d\n", min_value, minimum);
+}
