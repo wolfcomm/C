@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+int first_function(int a, int b);
+int main()
+{
+
+    int foo = 10;
+    int bar = 20;
+    int lots = first_function(foo, bar) * 10;
+    printf("first function is %d\n", lots);
+    return 0;
+}
+
+int first_function(int a, int b) {
+    return a + b;
+}
