@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    float numbers[] = {11.11, 12.12, 13.13};
+    printf("size of float = %ld bytes\n", sizeof(float));
+    printf("size of numbers array = %ld bytes\n", sizeof(numbers));
+    printf("number of floats = %ld\n", sizeof(numbers)/sizeof(float));
+    return 0;
+}
