@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    char *letter;
+    char c = 'k';
+    letter = &c;
+    printf("%c всегда имеет значение %c\n", c, *letter);
+    
+    c = 'q';
+    printf("%c всегда имеет значение %c\n", c, *letter);
+    
+    char vlad[] = "vladislav";
+    letter = &vlad[2];
+    printf("'%c' в массиве %s/n", *letter, vlad);
+    
+    
+    return 0;
+}
