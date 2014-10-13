@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+void scope();
+int main()
+{
+    char alpha[] = "gamma";
+    printf("alpha within main = %s\n", alpha);
+    scope();
+    int the_wall = 10;
+    if (the_wall > 10) {
+        int alpha = 10;
+        int gamma = 10;
+        printf("alpha in if = %d, gamma in if = %d\n", alpha, gamma);
+    }
+    else
+        printf("the wall is less than %d\n", the_wall);
+    return 0;
+}
+
+void scope() {
+    char alpha[] = "gamma";
+    printf("%s\n", alpha);
+}
